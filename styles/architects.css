@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-.work-sans-font {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-/* shared styles */
+/* Shared Styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,20 +16,20 @@
     color: #FF900E;
 }
 
-main > section {
-    margin-top: 130px;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* text colors */
 .text-gray {
     color: #424242;
 }
 
 .text-light-gray {
     color: #727272;
+}
+
+#text-dark {
+    color: #131313;
+}
+
+#text-light {
+    font-weight: 500;
 }
 
 .bg-light {
@@ -47,8 +39,8 @@ main > section {
 
 .btn-primary {
     background-color: #FF900E;
-    color: white;
-    padding: 15px 20px;
+    color: #FFFFFF;
+    padding: 18px 25px;
     font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
@@ -56,7 +48,19 @@ main > section {
     cursor: pointer;
 }
 
-/* navbar related styles */
+main > section {
+    margin-top: 130px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* Navbar */
 .navbar {
     justify-content: space-between;
     align-items: center;
@@ -69,7 +73,6 @@ main > section {
 
 .nav-links {
     list-style: none;
-    display: flex;
 }
 
 .nav-item {
@@ -86,7 +89,7 @@ main > section {
     margin: 0 auto;
 }
 
-/* banner related styles */
+/* Banner */
 .banner {
     margin-top: 50px;
 }
@@ -105,6 +108,7 @@ main > section {
 
 .banner-description {
     margin: 20px 0 30px 0;
+    color: #727272;
 }
 
 .banner-image {
@@ -112,7 +116,7 @@ main > section {
     border-radius: 8px;
 }
 
-/* team and feature related style */
+/* Quick List of Features */
 .team {
     align-items: center;
 }
@@ -126,6 +130,7 @@ main > section {
 
 .teams-images-container img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .our-features {
@@ -134,38 +139,88 @@ main > section {
     flex: 1;
 }
 
-.feature-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-
 .features-description {
     margin: 20px 0 30px 0;
+    color: #727272;
+    line-height: 26px;
 }
 
-#text-light {
+
+/* Features you will love and enjoy */
+
+.enjoy-features {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.enjoy-left {
+    flex: 1;
+}
+
+.enjoy-content {
+    margin-bottom: 30px;
+}
+
+.enjoy-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    color: #131313;
+    margin: 0;
+}
+
+.enjoy-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 45px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 10px;
+}
+
+.enjoy-card p {
+    line-height: 26px;
+    margin: 0;
+}
+
+.enjoy-image-container {
+    flex: 1;
+    position: relative;
+}
+
+.architect-img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -75px;
+    left: -30px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 45px 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.experience-badge h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.experience-badge p {
+    font-size: 1.5rem;
     font-weight: 500;
+    margin: 0;
 }
-
-/* Responsive Media Query Fix */
-@media screen and (max-width: 576px) {
-    .team{
-
-    }
-    .teams-images-container{
-        grid-template-columns: repeat(1 ,1fr);
-    }
-    .our-features{
-        margin-left: 20px;
-    }
-}
-/* medium size device */
-@media screen and (min-width: 576px) and (max-width:992px) {
-    .team{
-        flex-direction: column;
-    }
-    .our-features{
-        margin: 50px auto;
-    }
-}
-
