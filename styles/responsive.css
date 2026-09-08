@@ -1,0 +1,215 @@
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+
+    .bg-light {
+        padding: 30px 50px;
+    }
+
+    .navbar,
+    .banner {
+        max-width: 100%;
+    }
+
+    .margin-50px {
+        margin: 70px 50px;
+    }
+
+    main > section {
+        margin-top: 80px;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    .team {
+        gap: 40px;
+    }
+
+    .our-features {
+        margin-left: 0;
+    }
+
+    .enjoy-features {
+        gap: 30px;
+    }
+
+    .experience-badge {
+        bottom: -50px;
+        left: -20px;
+        padding: 30px 25px;
+    }
+
+    .experience-badge h2 {
+        font-size: 2.5rem;
+    }
+
+    .experience-badge p {
+        font-size: 1.2rem;
+    }
+
+    .facts-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsors-companies {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .footer-container {
+        margin: 80px 50px 30px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+    .bg-light {
+        padding: 25px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .brand {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        padding: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+    }
+
+    .banner {
+        margin-top: 30px;
+    }
+
+    .banner-content {
+        margin-bottom: 30px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-description {
+        line-height: 24px;
+    }
+
+    .btn-primary {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .margin-50px {
+        margin: 50px 20px;
+    }
+
+    main > section {
+        margin-top: 60px;
+    }
+
+
+    /* Team Section */
+
+    .team {
+        flex-direction: column;
+    }
+
+    .teams-images-container {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .our-features {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+
+    /* Enjoy Features */
+
+    .enjoy-features {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .enjoy-left {
+        width: 100%;
+    }
+
+    .enjoy-title {
+        font-size: 2.2rem;
+    }
+
+    .enjoy-card {
+        padding: 20px;
+    }
+
+    .enjoy-image-container {
+        width: 100%;
+    }
+
+    .experience-badge {
+        position: static;
+        margin-top: 20px;
+        padding: 25px;
+    }
+
+    .experience-badge h2 {
+        font-size: 2.5rem;
+    }
+
+
+    /* Facts */
+
+    .facts-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fact {
+        width: 100%;
+    }
+
+
+    /* Sponsors */
+
+    .sponsors-companies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .sponsors-companies img {
+        max-width: 120px;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        margin: 60px 20px 20px;
+        padding: 20px;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}

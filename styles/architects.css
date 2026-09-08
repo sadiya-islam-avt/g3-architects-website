@@ -283,3 +283,20 @@ main > section {
     max-width: 160px;
     filter: grayscale(100%);
 }
+
+/* Footer Section Styles */
+.footer-container {
+    max-width: 1440px;
+    margin: 130px auto 30px auto;
+    background-color: #FFF4E7;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.25rem;
+    color: #424242;
+}
+
+
